@@ -1,5 +1,7 @@
 # docker 常用指令
 
+*说明：所有带 $ 的为在容器内命令行运行*
+
 查看所有容器containers信息
 
 ```bash
@@ -35,7 +37,7 @@ docker exec -it container_name_or_id /bin/bash
 $ exit
 ```
 
-解压tar.gz
+解压tar.gz文件
 
 ```
 $ tar -xzvf example_file.tar.gz

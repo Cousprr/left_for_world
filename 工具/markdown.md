@@ -28,6 +28,20 @@ ___粗斜体___
 1. 有序列表
 2. 有序列表
 
+`代码块`
+
+```c
+这被称为围栏式代码块，其实是一种拓展语法，支持语法高亮
+int main(){return 0;}
+```
+
+
+> 引用
+>
+>引用内换行
+
 这是一个链接和悬停文字 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
 
-![cat图片](../cat.jpg)
+图片可以使用相对路径，父目录`../cat.jpg`，子目录`name/cat.jpg`，同目录`cat.jpg`。
+
+![cat图片](cat.jpg)
