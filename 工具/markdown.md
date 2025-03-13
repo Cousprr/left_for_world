@@ -44,4 +44,4 @@ int main(){return 0;}
 
 图片可以使用相对路径，父目录`../cat.jpg`，子目录`name/cat.jpg`，同目录`cat.jpg`。
 
-![cat图片](cat.jpg)
+![cat图片](../cat.jpg)
