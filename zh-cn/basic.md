@@ -30,4 +30,4 @@ ___粗斜体___
 
 这是一个链接和悬停文字 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
 
-![cat图片](https://github/cousprr/left_for_world/cat.png)
+![cat图片](https://github/cousprr/left_for_world/blob/master/cat.png)
