@@ -1,0 +1,50 @@
+# 数据库系统2024-2025第二学期 
+
+一些个人的实验记录和踩过的坑，留给朋友们参考。
+
+## 实验环境配置
+
+本次课程使用docker环境，需要首先安装docker desktop，再从dockerhub上拉取老师提供的镜像。
+
+拉取时容易遇到问题`request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)`
+
+这是由于国内网络环境限制，解决方法是通过配置镜像源，具体方法如下：
+
+1. 打开docker desktop右上角的“设置”。
+2. 在弹出的设置窗口中，选择“Docker Engine”选项卡。
+3. 在配置文件**大括号内**添加如下代码，完成后点击“Apply & Restart”按钮，重启docker desktop：
+
+```json
+"registry-mirrors": [
+    "https://docker.rainbond.cc/",
+    "https://docker-cf.registry.cyou",
+    "https://dockercf.jsdelivr.fyi",
+    "https://docker.jsdelivr.fyi",
+    "https://dockertest.jsdelivr.fyi",
+    "https://mirror.aliyuncs.com",
+    "https://dockerproxy.com",
+    "https://mirror.baidubce.com",
+    "https://docker.m.daocloud.io",
+    "https://docker.nju.edu.cn",
+    "https://docker.mirrors.sjtug.sjtu.edu.cn",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://mirror.iscas.ac.cn"
+  ]
+```
+
+附上拉取代码：
+
+```bash
+docker pull 77qiqi/ucas-dbms-hw-2020:18.04
+```
+
+成功拉取镜像后创建容器，这里的端口8080是本地主机的，80是容器内部的，以后可以用localhost:8080访问容器服务（现在不行因为容器内还没有对应的80端口web页面）。
+
+```bash
+docker run -itd -p 8080:80 77qiqi/ucas-dbms-hw-2020:18.04 /bin/bash
+```
+
+
+## 实验一：数据库设计
+
+*TODO*
