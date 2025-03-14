@@ -29,6 +29,7 @@
   - [linux命令行](/工具/linux.md)
   - [vim](/工具/vim.md)
   - latex
+  - [vscode常用插件](/工具/vscode extension.md)
 - 语言
   - c
   - ruby
