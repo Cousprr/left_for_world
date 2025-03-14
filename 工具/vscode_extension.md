@@ -20,7 +20,7 @@
 
 verilog格式化插件，基于Verible，可以自定义  
 附上本人设置，win系统选择`win64`
-```json
+```
  --column_limit=300 --indentation_spaces=8 --assignment_statement_alignment=preserve --named_port_alignment=preserve --port_declarations_alignment=align --module_net_variable_alignment=align
 ```
 
