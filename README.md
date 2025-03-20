@@ -30,6 +30,7 @@
   - [vim](/工具/vim.md)
   - latex
   - [vscode常用插件](/工具/vscode_extension.md)
+  - [blender](/工具/blender.md)
 - 语言
   - c
   - ruby
@@ -41,3 +42,4 @@
 
 - 2025.3.13: 建库，开始整理
 - 2025.3.14: 添加vsc 常用插件笔记
+- 2025.3.20: 添加blender笔记，拓展cod和db笔记
