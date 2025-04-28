@@ -49,7 +49,14 @@
 ```
 ssh: connect to host github.com port 22: Connection refused
 ```
-意思是ssh连接不上github 22端口，一般是加速器问题，比如把watt关掉就好了
+意思是ssh连接不上github 22端口，一般是加速器问题，比如把watt关掉就好了。
+
+如果关掉之后不行先试试切换成443端口，注意第二行地址是ssh.github.com而不是github.com。
+```
+ssh -T -p 443 git@ssh.github.com
+git remote set-url origin git@ssh.github.com:USERNAME/REPONAME.git
+```
+还是不行就要考虑是不是dns被污染了，输入`ssh -vT git@github.com`查看，如果github.com解析成了\[127.0.0.1\]或者\[::1\]，就说明被污染了，试试在cmd里输入`ipconfig /flushdns`刷新dns缓存，再不行只能去C:/Windows/System32/drivers/etc/host文件里改域名映射，把`127.0.0.1 github.com`这一行删掉改成`140.82.112.4 github.com`。后面这个地址来自[https://dnschecker.org/](https://dnschecker.org/)，可以查到github.com的ip地址，我这里是找了最上面一个。
 
 2
 ```
